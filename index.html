@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Celfie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="icon" type="img/png" href="logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+<style>
+    img{
+        animation-name: radius;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        border: solid 5px red;
+
+    }
+
+    @keyframes radius {
+  0%    {border: solid 5px red; border-radius: 1px;}
+  5%    {border: solid 5px orangered; border-radius: 2px;}
+  10%   {border: solid 5px orange; border-radius: 3px;}
+  15%   {border: solid 5px yellow; border-radius: 4px;}
+  20%   {border: solid 5px yellowgreen; border-radius: 5px;}
+  25%   {border: solid 5px green; border-radius: 6px;}
+  30%   {border: solid 5px darkgreen; border-radius: 7px;}
+  35%   {border: solid 5px darkcyan; border-radius: 8px;}
+  40%   {border: solid 5px cyan; border-radius: 9px;}
+  45%   {border: solid 5px lightblue; border-radius: 10px;}
+  50%   {border: solid 5px blue; border-radius: 11px;}
+  55%   {border: solid 5px darkblue; border-radius: 12px;}
+  60%   {border: solid 5px darkmagenta; border-radius: 13px;}
+  65%   {border: solid 5px darkviolet; border-radius: 14px;}
+  70%   {border: solid 5px purple; border-radius: 15px;}
+  75%   {border: solid 5px darkorchid; border-radius: 16px;}
+  80%   {border: solid 5px deeppink; border-radius: 17px;}
+  85%   {border: solid 5px palevioletred; border-radius: 18px;}
+  90%   {border: solid 5px salmon; border-radius: 19px;}
+  95%   {border: solid 5px pink; border-radius: 20px;}
+  100%  {border: solid 5px red; border-radius: 0px;}
+}
+</style>
+</head>
+
+<body>
+    <center>
+        <h1>Celfie</h1>
+        <hr>
+        <h4>As soon as the popup appears, please click Allow. After you've spoken a command,</h4>
+        <h3>Say "selfie" for Taking your selfies and to make a Collage</h3>
+        <button class="btn btn-primary" onclick="save()">Start</button>
+        <h4>Press the Start button</h4>
+        <label>Your webcam:</label>
+        <div id="camera"></div>
+        <label>Your selfie will Display Here:</label>
+        <div id="resultRow">
+            <div id="result1">
+                <img src="https://c0.wallpaperflare.com/preview/828/932/975/camera-lens-vintage-photography.jpg" style="width: 30%;">
+            </div>
+            <div id="result2">
+                <img src="https://media.istockphoto.com/vectors/photo-camera-banner-vector-id1130904817?k=20&m=1130904817&s=170667a&w=0&h=Gywq6eLIgdf9bXd4THNey5CNht8wFceCrNUjyfYAX08=" style="width: 30%;">
+            </div>
+            <div id="result3">
+                <img src="https://wallpaperaccess.com/full/3995917.jpg" style="width: 30%;">
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
